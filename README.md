@@ -1,5 +1,5 @@
-# Pine-jinx
-<img align="left" alt="Frogjinx" width="22px" src="https://cdn.discordapp.com/attachments/780529926520438854/802958006282092624/FrogRyujinx.svg" />A local Ryujinx installer for linux
+# Pine-jinx-Greem
+<img align="left" alt="Frogjinx" width="22px" src="https://raw.githubusercontent.com/GreemDev/Ryujinx/master/distribution/misc/Logo.svg" />A local Ryujinx installer for linux
 
 The purpose of the installer is to place Ryujinx inside ~/.local/share/Ryujinx, setup a desktop entry and an optional ZSH or BASH alias with optional optimizations (per GPU vendor and/or gamemode) as well as setup mimetypes for Switch binaries (eg. NSP, XCI).
 
@@ -7,7 +7,10 @@ Ryujinx Master and Ryujinx LDN options are provided on this installer, both vers
 
 Usage:
 Open a terminal, paste <br>
-`bash -c "$(curl -s https://raw.githubusercontent.com/edisionnano/Pine-jinx/main/pinejinx.sh)"` <br>
+```
+bash -c "$(curl -s https://raw.githubusercontent.com/ryzendew/Pine-jinx-Greem/refs/heads/main/pinejinx.sh)"
+```
+<br>
 and hit enter
 
 ## Notes and Warnings
