@@ -51,7 +51,11 @@ removealias() {
 }
 install() {
 	printf "Downloading $version...\n"
-	curl -L "https://github.com/GreemDev/Ryujinx/releases/download/${version}/ryujinx-${version}-linux_x64.tar.gz" > ryujinx-${version}-linux_x64.tar.gz
+	version="latest"
+        download_url="https://github.com/GreemDev/Ryujinx/releases/download/${version}/ryujinx-${version}-linux_x64.tar.gz"
+        output_file="ryujinx-${version}-linux_x64.tar.gz"
+        curl -L "${download_url}" -o "${output_file}"
+
 	tar -xf ryujinx-${version}-linux_x64.tar.gz
 	arch_dir=$(tar --exclude='*/*' -tf ryujinx-${version}-linux_x64.tar.gz)
 	if [ -d "$arch_dir" ]; then
